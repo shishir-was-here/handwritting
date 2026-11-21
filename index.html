@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Shishir Hand · Handwriting preview</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <main>
+    <header>
+      <h1>Shishir Hand<span>.</span></h1>
+      <p>Handwriting by Shishir Acharjee</p>
+    </header>
+    <section aria-labelledby="page-title">
+      <div class="toolbar">
+        <h2 id="page-title"><label for="writing">Your notebook</label></h2>
+        <div class="controls">
+          <label for="size">Pen size</label>
+          <input id="size" type="range" min="20" max="54" value="34">
+          <output id="size-value" for="size">34 px</output>
+        </div>
+      </div>
+      <div class="paper">
+        <textarea id="writing" aria-describedby="tip" spellcheck="false" placeholder="Start writing here…">The quick brown fox jumps over a lazy dog.
+
+Some thoughts look better in handwriting.</textarea>
+      </div>
+      <footer>
+        <span id="tip">Type on the page to try the handwriting.</span>
+        <button type="button" id="clear">Clear page</button>
+      </footer>
+      <p role="status" id="status" hidden></p>
+    </section>
+  </main>
+</body>
+</html>
